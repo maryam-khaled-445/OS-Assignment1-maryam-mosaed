@@ -150,6 +150,7 @@ class Process implements Runnable {
 }
 
 public class SchedulerSimulation {
+    static int contextSwitches = 0;
     public static void main(String[] args) {
         // ⚠️ IMPORTANT: Put your student ID here to seed the random number generator
         // This makes your output unique to you - DO NOT forget to change this!
@@ -201,11 +202,9 @@ public class SchedulerSimulation {
         for (int i = 1; i <= numProcesses; i++) {
 
             int burstTime = timeQuantum / 2 + random.nextInt(2 * timeQuantum + 1);
-
             int priority = 1 + random.nextInt(5); 
 
             Process process = new Process("P" + i, burstTime, timeQuantum, priority);
-
             addProcessToQueue(process, processQueue, processMap);
         }
         // Start of the scheduler simulation
@@ -224,9 +223,11 @@ public class SchedulerSimulation {
         while (!processQueue.isEmpty()) {
             // Get the next thread from the queue (FIFO)
             Thread currentThread = processQueue.poll(); // Dequeues the next thread
+            contextSwitches++;
             
             // Print the current process queue (list of process IDs in the queue)
             System.out.println(Colors.BOLD + Colors.MAGENTA + "┌─ Ready Queue " + "─".repeat(65) + Colors.RESET);
+             
             System.out.print(Colors.MAGENTA + "│ " + Colors.RESET + Colors.BRIGHT_WHITE + "[" + Colors.RESET);
             int queueCount = 0;
             for (Thread thread : processQueue) {
@@ -281,7 +282,11 @@ public class SchedulerSimulation {
         System.out.println(Colors.BOLD + Colors.BRIGHT_GREEN + 
                           "╚════════════════════════════════════════════════════════════════════════════════╝" + 
                           Colors.RESET + "\n");
+        System.out.println(Colors.BOLD + Colors.BRIGHT_CYAN +
+                "Total context switches: " + contextSwitches +
+                Colors.RESET);
     }
+    
     
     // Method to add a process to the queue and map, while printing a "ready" message
      public static void addProcessToQueue(Process process,
