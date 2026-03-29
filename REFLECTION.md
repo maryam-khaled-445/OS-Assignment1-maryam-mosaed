@@ -15,7 +15,7 @@ From this assignment, I learned how multithreading allows multiple threads to ru
 ## Question 2: What was the most challenging part of this assignment?
 
 **Your Answer:**
-
+The most challenging part of this assignment was managing synchronization between multiple threads. At first, it was difficult to understand how shared resources could be accessed safely without causing race conditions or inconsistent results. For example, when I tried updating a shared counter from two threads simultaneously, the final output was sometimes incorrect, which was confusing. Understanding the need for locks or synchronized blocks was essential but took some trial and error. Additionally, keeping track of which thread was running and debugging thread interleaving issues was tricky. I also struggled with visualizing the execution order, as threads don’t run linearly. Overall, figuring out how to control thread access while still allowing parallel execution was the most challenging aspect.
 
 
 
