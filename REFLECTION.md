@@ -8,20 +8,18 @@ Answer the following questions about your learning experience. Each answer shoul
 ## Question 1: What did you learn about multithreading?
 
 **Your Answer:**
-
-[Write your answer here. Discuss specific concepts like thread creation, thread states, how threads execute concurrently, what surprised you, etc.]
-
+ 
+From this assignment, I learned how multithreading allows multiple threads to run concurrently, simulating parallel execution. I explored thread creation in Java using the `Runnable` interface and `Thread` class, and observed how threads have different states such as running, waiting, and terminated. It was interesting to see how context switching occurs between threads in the scheduler. I also learned that threads can share resources, which requires careful tracking to avoid conflicts. Implementing the CPU scheduler made me realize the importance of synchronizing access to shared data like waiting time. Overall, I now understand how threads can improve efficiency by performing tasks seemingly at the same time. The assignment also showed me the practical difference between thread execution order and scheduling logic.
 ---
 
 ## Question 2: What was the most challenging part of this assignment?
 
 **Your Answer:**
 
-REFLECTION
 
-**Question 1: What did you learn about multithreading?**  
-Your Answer:  
-From this assignment, I learned how multithreading allows multiple threads to run concurrently, simulating parallel execution. I explored thread creation in Java using the `Runnable` interface and `Thread` class, and observed how threads have different states such as running, waiting, and terminated. It was interesting to see how context switching occurs between threads in the scheduler. I also learned that threads can share resources, which requires careful tracking to avoid conflicts. Implementing the CPU scheduler made me realize the importance of synchronizing access to shared data like waiting time. Overall, I now understand how threads can improve efficiency by performing tasks seemingly at the same time. The assignment also showed me the practical difference between thread execution order and scheduling logic.
+
+
+
 ---
 
 ## Question 3: How did you overcome the challenges you faced?
