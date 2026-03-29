@@ -68,29 +68,44 @@ Time spent:
 
 ---
 
-### Entry 3 - [Date and Time]
-**What I did**: 
+## Entry 3 - [March 28, 2026, 5:30 PM]
+What I did:
+Implemented context switch counter
 
-**Details**: 
+Details:
+- Created static variable for context switches
+- Incremented it whenever a process starts execution
+- Displayed total context switches at the end
 
-**Challenges**: 
+Challenges:
+- Finding the correct place to increment the counter
 
-**Solution**: 
+Solution:
+- Placed it before starting each thread
 
-**Time spent**: 
+Time spent:
+1 hour 
 
 ---
 
-### Entry 4 - [Date and Time]
-**What I did**: 
+## Entry 4 - [March 28, 2026, 7:00 PM]
 
-**Details**: 
+**What I did:**
+Debugged and fixed an issue in the scheduling loop
 
-**Challenges**: 
+**Details:**
+- Observed unexpected behavior during process execution
+- Reviewed how threads are created and executed in the loop
+- Tracked the execution flow to identify the problem
 
-**Solution**: 
+**Challenges:**
+- Program crashed due to incorrect thread handling
 
-**Time spent**: 
+**Solution:**
+- Adjusted the code to ensure each thread is executed correctly without duplication
+
+**Time spent:**
+1 hour 
 
 ---
 
