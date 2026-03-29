@@ -131,25 +131,36 @@ Implemented waiting time calculation from scratch
 
 ---
 
-### Entry 6 - [Optional - Date and Time]
-**What I did**: 
+## Entry 6 - [March 29, 2026, 9:00 PM]
 
-**Details**: 
+**What I did:**
+Final testing and small improvements
 
-**Challenges**: 
+**Details:**
+- Tested the program multiple times with different outputs
+- Checked that all features (priority, context switch, waiting time) work correctly
+- Cleaned up some print statements
 
-**Solution**: 
+**Challenges:**
+- Output was a bit confusing with many processes
 
-**Time spent**: 
+**Solution:**
+- Improved formatting slightly to make it easier to read
 
+**Time spent:**
+1 hour
 ---
 
 ## Summary
 
-**Total time spent on assignment**: [X hours]
+Total time spent on assignment:
+6.5 hours
 
-**Most challenging part**: 
+Most challenging part:
+Handling threads correctly and debugging execution errors
 
-**Most interesting learning**: 
+Most interesting learning:
+Understanding how scheduling algorithms work in practice
 
-**What I would do differently next time**: 
+What I would do differently next time:
+Break tasks into smaller parts and test each feature earlier
