@@ -48,16 +48,23 @@ Document your development process as you work on the assignment. Add entries sho
 **Time spent**: 45 minutes
 ---
 
-### Entry 2 - [Date and Time]
-**What I did**: 
+## Entry 2 - [March 27, 2026, 8:00 PM]
+What I did:
+Added priority feature to processes
 
-**Details**: 
+Details:
+- Added priority attribute to Process class
+- Generated random priority (1–5)
+- Displayed priority when adding process to ready queue
 
-**Challenges**: 
+Challenges:
+- Making sure priority is correctly passed to constructor
 
-**Solution**: 
+Solution:
+- Updated constructor and verified output
 
-**Time spent**: 
+Time spent:
+1.5 hours
 
 ---
 
