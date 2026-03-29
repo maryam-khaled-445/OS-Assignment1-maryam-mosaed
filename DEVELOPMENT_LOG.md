@@ -32,17 +32,20 @@ Document your development process as you work on the assignment. Add entries sho
 
 ## Your Development Log:
 
-### Entry 1 - [Date and Time]
-**What I did**: 
+### Entry 1 - [March 27, 2026, 6:00 PM]
+**What I did**: Reviewed the starter code and set up the project
 
 **Details**: 
+- Opened and explored the provided scheduler simulation code
+- Ran the program to understand how it works
+- Located the section to update the student ID and modified it
+- Verified that the program runs correctly before making changes
 
-**Challenges**: 
+**Challenges**: Understanding how the existing code is structured, especially the relationship between threads and processes
 
-**Solution**: 
+**Solution**: Carefully read through the code and followed the execution flow step by step
 
-**Time spent**: 
-
+**Time spent**: 45 minutes
 ---
 
 ### Entry 2 - [Date and Time]
