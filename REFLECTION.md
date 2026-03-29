@@ -41,18 +41,16 @@ Multithreading is widely used in real-world applications to make programs more e
 
 ### What would you like to learn more about?
 
-[Any topics related to threading, concurrency, or operating systems that you're curious about?]
+I would like to learn more about advanced concurrency concepts, such as thread pools, semaphores, and concurrent data structures. I am also curious about deadlocks and thread priorities, and how professional applications manage multiple threads efficiently. Watching YouTube tutorials gave me a good introduction, but I want to explore these topics further to understand how multithreading is applied in large-scale real-world systems like web servers and multiplayer games.
 
 ---
 
 ### How confident do you feel about multithreading concepts now?
 
-[Rate yourself and explain: Beginner / Intermediate / Confident]
-
-[Explain your rating - what do you understand well? What needs more practice?]
+I would rate myself as Intermediate. I now understand the basics of creating threads, running them concurrently, and using synchronization to protect shared resources. However, I need more practice with complex issues like avoiding deadlocks, optimizing thread performance, and using advanced concurrency tools. The YouTube tutorials helped me gain confidence in applying what I learned to my assignment, but I know I need more hands-on practice to become fully confident.
 
 ---
 
 ### Feedback on the assignment
 
-[Any comments about the assignment? Was it helpful? Too easy/hard? Suggestions for improvement?]
+This assignment was very helpful because it allowed me to practice multithreading in a real coding scenario rather than just reading theory. Some parts were challenging, especially debugging concurrent threads, but using video tutorials made it much easier to understand. It would be helpful if future assignments included v or more examples of real-world applications, which could make it even easier to grasp thread behavior. Overall, it was a great learning experience.
