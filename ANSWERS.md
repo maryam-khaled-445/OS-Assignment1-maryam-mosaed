@@ -11,7 +11,7 @@ Answer all 4 questions with detailed explanations. Each answer should be **3-5 s
 
 **Your Answer:**
 
-[Write your answer here. Consider: What is a process? What is a thread? How do they differ in terms of memory, resources, creation overhead? Why are threads more suitable for this simulation?]
+A process is an independent program in execution that has its own memory space, resources, and execution context. A thread is a smaller unit of execution that runs within a process and shares the same memory and resources with other threads in that process. Threads are lightweight compared to processes because creating a new thread requires less overhead than creating a whole process. In this assignment, we used threads instead of separate processes because all simulated processes needed to access shared structures like the ready queue, and threads can easily share memory. Additionally, threads allow faster context switching and lower creation overhead, which is important when simulating many processes in Round-Robin scheduling.
 
 ---
 
@@ -21,15 +21,16 @@ Answer all 4 questions with detailed explanations. Each answer should be **3-5 s
 
 **Your Answer:**
 
-[Write your answer here. Describe the specific behavior - where does the process go? When does it run again? Give an example from your actual program output showing a process that was re-queued.]
+In Round-Robin scheduling, if a process doesn’t finish within its allocated time quantum, it is re-queued at the end of the ready queue to wait for its next turn. This ensures that every process gets a fair chance to execute while preventing any single process from monopolizing the CPU.
 
 Example from my output:
-```
-[Paste a relevant snippet from your program output here showing a process being re-queued]
-```
 
-**Explanation of example:**
-[Explain what's happening in the output snippet you pasted]
+  ⏸ P3 completed quantum 2000ms │ Overall progress: [██████░░░░░░░░] 60%
+  ↻ P3 yields CPU for context switch
+➕ P3 (Priority: 2) added to ready queue | Burst: 5000ms
+
+Explanation of example:
+In this snippet, process P3 ran for its time quantum of 2000ms but still has 3000ms remaining. Therefore, it is added back to the ready queue (addProcessToQueue) to be executed in the next round. This re-queueing behavior is important because it maintains fairness, allowing other processes in the queue to run and ensuring that the CPU is shared predictably among all tasks.
 
 ---
 
@@ -39,17 +40,18 @@ Example from my output:
 
 **Your Answer:**
 
-[Write your answer here. For each state, explain when P1 enters that state during the simulation. Use your understanding of the code to trace through the lifecycle.]
+In the simulation, a thread goes through several states during execution. Here’s the lifecycle for process P1:
+1. **New**: When Thread t = new Thread(process); is created, P1 is in the New state because it has been instantiated but has not started running.
 
-1. **New**: [When is P1 in New state?]
+2. **Runnable**:After calling t.start(), the thread enters the Runnable state. It is ready to run and waiting for the CPU scheduler to allocate time.
 
-2. **Runnable**: [When does P1 become Runnable?]
+3. **Running**: When the CPU executes P1’s run() method, the thread enters the Running state. Here, it simulates execution for its time quantum using Thread.sleep() for progress steps.
 
-3. **Running**: [When is P1 Running?]
+4. **Waiting**:During Thread.sleep(stepTime), P1 temporarily enters a Waiting state. It is paused for the duration of the sleep interval, simulating the passage of execution time.
 
-4. **Waiting**: [When/why would P1 be Waiting?]
+5. **Terminated**: Once remainingTime <= 0 and the run() method finishes, P1 enters the Terminated state. The thread is no longer alive, and its execution is complete.
 
-5. **Terminated**: [When is P1 Terminated?]
+This lifecycle is controlled in the code through Thread.start(), Thread.sleep(), and Thread.join(), demonstrating all key thread states in practice.
 
 ---
 
