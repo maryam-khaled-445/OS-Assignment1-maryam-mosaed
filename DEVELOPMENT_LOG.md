@@ -109,16 +109,25 @@ Debugged and fixed an issue in the scheduling loop
 
 ---
 
-### Entry 5 - [Date and Time]
-**What I did**: 
+## Entry 5 - [March 29, 2026, 6:30 PM]
 
-**Details**: 
+**What I did:**
+Implemented waiting time calculation from scratch
 
-**Challenges**: 
+**Details:**
+- Added new variables in the Process class to track waiting time
+- Created logic to record when a process enters the ready queue
+- Updated the code to calculate total waiting time before execution
+- Displayed waiting time for each process at the end of the simulation
 
-**Solution**: 
+**Challenges:**
+- Figuring out how to correctly track waiting time across multiple executions
 
-**Time spent**: 
+**Solution:**
+- Used timestamps to measure how long the process stays in the queue before each run
+
+**Time spent:**
+2 hours
 
 ---
 
