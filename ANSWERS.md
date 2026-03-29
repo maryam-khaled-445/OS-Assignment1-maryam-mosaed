@@ -61,31 +61,26 @@ This lifecycle is controlled in the code through Thread.start(), Thread.sleep(),
 
 **Your Answer:**
 
-### Example 1: [Name of application/scenario]
+### Example 1: Web Browser
 
 **Description**: 
-[Describe the real-world scenario or application]
-
+the browser, allthreadSeparate for handling
 **Why Round-Robin works well here**: 
-[Explain why Round-Robin scheduling is suitable. Consider fairness, responsiveness, predictability, etc.]
-
-### Example 2: [Name of application/scenario]
-
+Round-Robin  FatBefore moving on tobrowsing experienceSo that each tab responds
+### Example 2:Smartphone apps (such as Whatsapp or Twitter)
 **Description**: 
-[Describe the real-world scenario or application]
-
+mobile applications, hereAlways. K
 **Why Round-Robin works well here**: 
-[Explain why Round-Robin scheduling is suitable. Consider fairness, responsiveness, predictability, etc.]
-
+Round-Robin ensures that every mA fair share of the processor , so the application
 ---
 
 ## Summary
 
 **Key concepts I understood through these questions:**
-1. 
-2. 
-3. 
+1. Round-Robin scheduling distributes CPU time fairly among all tasks, ensuring fast responsiveness and preventing any single task from monopolizing the CPU.
+2. Threads allow multiple tasks to run simultaneously within the same application or system without blocking each other.
+3. Re-queueing incomplete tasks ensures fairness and allows all tasks to complete in a balanced way.
 
 **Concepts I need to study more:**
-1. 
-2. 
+1.Optimizing performance for applications with multiple concurrent tasks and better CPU management in complex scenarios. 
+2. Handling thread synchronization and deadlock issues when multiple threads access shared resources.
