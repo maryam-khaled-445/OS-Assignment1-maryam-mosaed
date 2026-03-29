@@ -26,8 +26,7 @@ The most challenging part of this assignment was managing synchronization betwee
 
 **Your Answer:**
 
-[Describe your problem-solving approach. Did you read documentation? Ask for help? Debug systematically? What resources did you use? What strategies worked?]
-
+I overcame these challenges mainly by watching YouTube tutorials on Java multithreading, which provided clear examples of creating threads, using synchronized blocks, and avoiding race conditions. The videos helped me visualize how threads run concurrently and how shared resources can be accessed safely. I followed along with some example code and adapted it to my own assignment, which made it easier to understand the concepts in practice. Additionally, I used print statements to monitor thread execution and check if my changes were working correctly. Step by step, I implemented synchronization mechanisms and tested each modification until the threads behaved as expected. Using this combination of video guidance and hands-on experimentation allowed me to overcome the difficulties and learn multithreading effectively.
 ---
 
 ## Question 4: How can you apply multithreading concepts in real-world applications?
