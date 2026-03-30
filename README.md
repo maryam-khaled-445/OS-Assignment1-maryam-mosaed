@@ -527,7 +527,11 @@ Your work will be evaluated based on the following criteria:
 - Not using university email for GitHub: -0.5 marks
 - AI-generated without understanding: 0 marks (entire assignment)
 - Plagiarism: 0 marks + academic misconduct report
+---
 
+## 🎥 Video Demonstration
+  
+ [(https://drive.google.com/file/d/11ihV5NloPGQfytylEYKxd9d6lAnUKc1s/view?usp=sharing)]
 ---
 
 ## 📚 Additional Resources
