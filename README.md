@@ -531,7 +531,7 @@ Your work will be evaluated based on the following criteria:
 
 ## 🎥 Video Demonstration
   
- [(https://drive.google.com/file/d/11ihV5NloPGQfytylEYKxd9d6lAnUKc1s/view?usp=sharing)]
+ [https://drive.google.com/file/d/1aHSQAib6RLSX6WsZaNSPMm2cPLAFeVjm/view?usp=sharing]
 ---
 
 ## 📚 Additional Resources
